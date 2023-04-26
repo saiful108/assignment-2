@@ -1,3 +1,6 @@
+.hide{
+    display:none;
+}
 body {
   font-family: "Poppins", sans-serif;
   font-family: "Roboto", sans-serif;
@@ -25,52 +28,111 @@ body {
   text-align: center;
   font-size: 64px;
   font-weight: 700;
-
 }
 .brand-info {
-
   text-align: center;
   font-size: 16px;
- 
 }
 .btn-explore {
-    padding-top: 10px;
-    padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
 }
-.btn-padding{
-padding:20px 25px;
-border-radius: 10px;
-font-size: 20px;
-font-weight: 600;
-color: #FFFFFF;
-background: #FF900E;
-border-style: none;
-
+.btn-padding {
+  padding: 20px 25px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #ff900e;
+  border-style: none;
 }
-.brand-sec img{
-    width: 100%;
-    height: 100%;
-    left: 1px;
-    top: 0px;
-    background: rgba(255, 144, 14, 0.1);
-  
+.brand-sec img {
+  width: 100%;
+  height: 100%;
+  left: 1px;
+  top: 0px;
+  background: rgba(255, 144, 14, 0.1);
 }
 
-
+/* feature */
+.feature {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+  align-items: center;
+}
+.grid img {
+  width: 342px;
+  height: 342px;
+  padding: 10px;
+}
+.grid img:hover {
+  border: 5px solid rgb(96, 96, 240);
+  border-color: steelblue;
+  border-radius: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.feature-heading {
+  font-size: 45px;
+}
+.feature-info {
+  color: #727272;
+  font-size: 16px;
+}
+.feature-flex {
+  width: 537px;
+  height: 304px;
+}
+.btn-more {
+  padding: 20px 0;
+}
 /* responsive */
 @media screen and (max-width: 668px) {
   .nav {
-    background-color: blueviolet;
+   
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 0px;
   }
+  .menu{
+    padding: 10px;
+  }
   .menus {
     display: flex;
     flex-direction: column;
-    padding: 0px;
+   
   }
+  .brand {
+    color: #131313;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .grid img {
+    width: 342px;
+    height: 342px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    justify-content: center;
+  }
+  .feature{
+    display: flex;
+    flex-direction: column;
+  }
+  .grid img {
+   width: 100%;
+  }
+  
 }
