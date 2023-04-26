@@ -1,3 +1,38 @@
-h1{
-    background-color: blue;
+.header{
+    background: #FF900E1A;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+.menu{
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    font-size:18px ;
+    
+}
+
+
+/* responsive */
+@media screen and (max-width:668px){
+    .nav{
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+        
+    }
+    .menus{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+
+    }
+    
 }
