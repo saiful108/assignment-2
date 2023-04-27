@@ -1,3 +1,6 @@
+*{
+  margin: 0;
+}
 .hide {
   display: none;
 }
@@ -106,8 +109,8 @@ body {
 .love-and-enjoy {
   margin-left: 200px;
   margin-right: 200px;
+  gap: 50px;
 
-  row-gap: 54px;
   margin-top: 60px;
   display: flex;
 }
@@ -119,8 +122,8 @@ body {
 .Mobile-box {
   margin: 10px;
   padding: 10px;
-  width: 569px;
-  height: 171px;
+  width: 100%;
+  height: 100%px;
   background: #ffffff;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
@@ -133,6 +136,43 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #727272;
+}
+.btn {
+  height: 200px;
+  width: 340px;
+  margin-top: -100px;
+  margin-left: 660px;
+}
+.btn-bootom {
+  padding: 0px 42px;
+  border-style: none;
+  background: #ff900e;
+  border-radius: 8px;
+}
+.some-effect {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 20px;
+}
+.boxes{
+  
+  margin-left: 200px;
+  margin-right: 200px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 40px;
+}
+.box {
+  display: flex;
+ align-items: center;
+ justify-content: center;
+  box-sizing: border-box;
+  width: 241.83px;
+  height: 241.83px;
+    border: 1px solid #ff900e;
+  border-radius: 8px;
+  
+  /* padding: 45px 35px; */
 }
 
 /* responsive */
@@ -176,9 +216,15 @@ body {
     width: 100%;
     height: 100vh;
   }
-  .love-and-enjoy{
+  .love-and-enjoy {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+  }
+  .btn {
+    display: none;
+  }
+  .some-effect {
     margin: 0 auto;
   }
 }
