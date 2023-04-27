@@ -175,6 +175,22 @@ body {
   /* padding: 45px 35px; */
 }
 
+.company{
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 70px;
+}
+.company img{
+  width: 100px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+
+
 /* responsive */
 @media screen and (max-width: 668px) {
   .nav {
@@ -227,4 +243,11 @@ body {
   .some-effect {
     margin: 0 auto;
   }
+  .boxes{
+          margin-top: 20px;
+    display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 20px;
+  }
+  
 }
